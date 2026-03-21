@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/plumbing-template">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
