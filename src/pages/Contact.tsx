@@ -3,18 +3,16 @@ import EmergencyBanner from "@/components/EmergencyBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import SEOHead from "@/components/SEOHead";
 import { Phone, Mail, MapPin, Clock, AlertTriangle } from "lucide-react";
-
-const services = [
-  "Drain Cleaning", "Water Heater Repair", "Leak Detection", "Pipe Repair",
-  "Sewer Line", "Toilet Repair", "Faucet Installation", "Gas Line", "Other",
-];
+import { seoConfig } from "@/lib/config";
 
 const Contact = () => {
   const [isEmergency, setIsEmergency] = useState(false);
 
   return (
     <>
+      <SEOHead page="contact" />
       <EmergencyBanner />
       <Navbar />
 
@@ -39,10 +37,10 @@ const Contact = () => {
                   <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 mb-6 flex items-start gap-3">
                     <AlertTriangle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-heading font-bold text-foreground text-sm">Plumbing Emergency?</p>
+                      <p className="font-heading font-bold text-foreground text-sm">{seoConfig.industry} Emergency?</p>
                       <p className="text-muted-foreground font-body text-sm mt-1">
                         For the fastest response, call us directly at{" "}
-                        <a href="tel:+15551234567" className="text-accent font-bold underline">(555) 123-4567</a>
+                        <a href={seoConfig.phoneHref} className="text-accent font-bold underline">{seoConfig.phone}</a>
                       </p>
                     </div>
                   </div>
@@ -71,7 +69,7 @@ const Contact = () => {
                     <label className="block font-body text-sm font-medium text-foreground mb-1.5">Service Needed</label>
                     <select className="w-full rounded-lg border border-input bg-background px-4 py-2.5 font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring">
                       <option value="">Select a service...</option>
-                      {services.map(s => <option key={s} value={s}>{s}</option>)}
+                      {seoConfig.serviceFormOptions.map(s => <option key={s} value={s}>{s}</option>)}
                     </select>
                   </div>
                   <div className="flex items-center gap-3">
@@ -106,9 +104,9 @@ const Contact = () => {
             <ScrollReveal className="md:w-80 shrink-0" delay={100}>
               <div className="space-y-6">
                 <div className="bg-surface rounded-lg border border-border/50 p-6">
-                  <a href="tel:+15551234567" className="flex items-center gap-3 font-heading text-2xl font-bold text-secondary mb-4">
+                  <a href={seoConfig.phoneHref} className="flex items-center gap-3 font-heading text-2xl font-bold text-secondary mb-4">
                     <Phone className="h-7 w-7 text-primary" />
-                    (555) 123-4567
+                    {seoConfig.phone}
                   </a>
                   <p className="text-muted-foreground font-body text-sm">Available 24/7 for emergencies. Regular scheduling Mon–Sat.</p>
                 </div>
@@ -118,23 +116,23 @@ const Contact = () => {
                     <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-heading font-bold text-foreground text-sm">Office Hours</h4>
-                      <p className="text-muted-foreground font-body text-sm">Mon–Fri: 7am – 6pm</p>
-                      <p className="text-muted-foreground font-body text-sm">Sat: 8am – 4pm</p>
-                      <p className="text-muted-foreground font-body text-sm">24/7 Emergency Service</p>
+                      <p className="text-muted-foreground font-body text-sm">{seoConfig.hours.weekday}</p>
+                      <p className="text-muted-foreground font-body text-sm">{seoConfig.hours.saturday}</p>
+                      <p className="text-muted-foreground font-body text-sm">{seoConfig.hours.emergency}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-heading font-bold text-foreground text-sm">Email</h4>
-                      <a href="mailto:info@aquaflow.com" className="text-primary font-body text-sm hover:underline">info@aquaflow.com</a>
+                      <a href={`mailto:${seoConfig.email}`} className="text-primary font-body text-sm hover:underline">{seoConfig.email}</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-heading font-bold text-foreground text-sm">Location</h4>
-                      <p className="text-muted-foreground font-body text-sm">123 Main St, Metro City</p>
+                      <p className="text-muted-foreground font-body text-sm">{seoConfig.address.full}</p>
                     </div>
                   </div>
                 </div>
