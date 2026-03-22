@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Droplets } from "lucide-react";
+import { seoConfig } from "@/lib/config";
 
 const Footer = () => (
   <footer className="bg-secondary text-secondary-foreground">
@@ -10,10 +11,10 @@ const Footer = () => (
             <div className="h-9 w-9 rounded-lg bg-primary flex items-center justify-center">
               <Droplets className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="font-heading text-lg font-bold">AquaFlow</span>
+            <span className="font-heading text-lg font-bold">{seoConfig.businessNameShort}</span>
           </div>
           <p className="text-secondary-foreground/70 font-body text-sm leading-relaxed">
-            Licensed and insured plumbing professionals serving the greater metro area since 2008.
+            Licensed and insured {seoConfig.industry.toLowerCase()} professionals serving the {seoConfig.serviceArea.toLowerCase()} since {seoConfig.yearEstablished}.
           </p>
         </div>
 
@@ -35,28 +36,26 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-bold mb-4">Services</h4>
           <div className="flex flex-col gap-2 text-secondary-foreground/70 font-body text-sm">
-            <span>Drain Cleaning</span>
-            <span>Water Heater Repair</span>
-            <span>Leak Detection</span>
-            <span>Pipe Repair</span>
-            <span>Emergency Plumbing</span>
+            {seoConfig.services.slice(0, 5).map(s => (
+              <span key={s.shortTitle}>{s.shortTitle}</span>
+            ))}
           </div>
         </div>
 
         <div>
           <h4 className="font-heading font-bold mb-4">Contact</h4>
           <div className="flex flex-col gap-3 text-sm font-body">
-            <a href="tel:+15551234567" className="flex items-center gap-2 text-secondary-foreground/70 hover:text-secondary-foreground transition-colors">
-              <Phone className="h-4 w-4 shrink-0" /> (555) 123-4567
+            <a href={seoConfig.phoneHref} className="flex items-center gap-2 text-secondary-foreground/70 hover:text-secondary-foreground transition-colors">
+              <Phone className="h-4 w-4 shrink-0" /> {seoConfig.phone}
             </a>
-            <a href="mailto:info@aquaflow.com" className="flex items-center gap-2 text-secondary-foreground/70 hover:text-secondary-foreground transition-colors">
-              <Mail className="h-4 w-4 shrink-0" /> info@aquaflow.com
+            <a href={`mailto:${seoConfig.email}`} className="flex items-center gap-2 text-secondary-foreground/70 hover:text-secondary-foreground transition-colors">
+              <Mail className="h-4 w-4 shrink-0" /> {seoConfig.email}
             </a>
             <div className="flex items-center gap-2 text-secondary-foreground/70">
-              <MapPin className="h-4 w-4 shrink-0" /> 123 Main St, Metro City
+              <MapPin className="h-4 w-4 shrink-0" /> {seoConfig.address.full}
             </div>
             <div className="flex items-center gap-2 text-secondary-foreground/70">
-              <Clock className="h-4 w-4 shrink-0" /> 24/7 Emergency Service
+              <Clock className="h-4 w-4 shrink-0" /> {seoConfig.hours.emergency}
             </div>
           </div>
         </div>
@@ -64,7 +63,7 @@ const Footer = () => (
     </div>
     <div className="border-t border-secondary-foreground/10">
       <div className="container mx-auto px-4 py-5 text-center text-secondary-foreground/50 font-body text-xs">
-        © {new Date().getFullYear()} AquaFlow Plumbing Co. All rights reserved. Licensed & Insured.
+        © {new Date().getFullYear()} {seoConfig.businessName} All rights reserved. Licensed & Insured.
       </div>
     </div>
   </footer>

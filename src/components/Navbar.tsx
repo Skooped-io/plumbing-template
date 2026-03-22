@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X, Droplets } from "lucide-react";
+import { seoConfig } from "@/lib/config";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -22,8 +23,8 @@ const Navbar = () => {
             <Droplets className="h-6 w-6 text-primary-foreground" />
           </div>
           <div className="leading-tight">
-            <span className="block font-heading text-lg font-bold text-secondary">AquaFlow</span>
-            <span className="block text-xs text-muted-foreground font-body">Plumbing Co.</span>
+            <span className="block font-heading text-lg font-bold text-secondary">{seoConfig.businessNameShort}</span>
+            <span className="block text-xs text-muted-foreground font-body">{seoConfig.industry} Co.</span>
           </div>
         </Link>
 
@@ -43,9 +44,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+15551234567" className="flex items-center gap-2 font-heading font-bold text-secondary text-lg">
+          <a href={seoConfig.phoneHref} className="flex items-center gap-2 font-heading font-bold text-secondary text-lg">
             <Phone className="h-5 w-5 text-primary" />
-            (555) 123-4567
+            {seoConfig.phone}
           </a>
           <Link
             to="/contact"
@@ -82,11 +83,11 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="tel:+15551234567"
+              href={seoConfig.phoneHref}
               className="flex items-center gap-2 font-heading font-bold text-secondary text-lg py-2 px-3"
             >
               <Phone className="h-5 w-5 text-primary" />
-              (555) 123-4567
+              {seoConfig.phone}
             </a>
           </div>
         </div>

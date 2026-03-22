@@ -9,9 +9,11 @@ import Reviews from "@/components/Reviews";
 import ServiceArea from "@/components/ServiceArea";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => (
   <>
+    <SEOHead page="home" />
     <EmergencyBanner />
     <Navbar />
     <Hero />

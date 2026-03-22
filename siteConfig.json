@@ -1,0 +1,173 @@
+{
+  "businessName": "AquaFlow Plumbing Co.",
+  "businessNameShort": "AquaFlow",
+  "phone": "(555) 123-4567",
+  "phoneHref": "tel:+15551234567",
+  "email": "info@aquaflow.com",
+  "address": {
+    "street": "123 Main St",
+    "city": "Metro City",
+    "state": "MC",
+    "zip": "00000",
+    "full": "123 Main St, Metro City"
+  },
+  "serviceArea": "Greater Metro Area",
+  "industry": "Plumbing",
+  "yearEstablished": "2008",
+  "licenseNumber": "MP-2847",
+  "tagline": "Fast. Reliable. Plumbing Done Right.",
+  "about": "AquaFlow Plumbing started with a single van and a commitment to doing plumbing the right way. Founder and master plumber Mike Torres spent 15 years working for larger companies before deciding homeowners deserved better — honest pricing, clean work, and plumbers who actually show up on time.\n\nToday our team of 12 licensed plumbers serves thousands of homes and businesses across the metro area. We've grown, but our values haven't changed: treat every home like it's our own, price every job fairly, and guarantee every repair.",
+  "aboutSubtitle": "Family-owned and operated since 2008. We've built our reputation one happy customer at a time.",
+  "founderName": "Mike Torres",
+  "teamSize": "12",
+  "emergencyResponseTime": "45 minutes",
+  "hours": {
+    "weekday": "Mon–Fri: 7am – 6pm",
+    "saturday": "Sat: 8am – 4pm",
+    "emergency": "24/7 Emergency Service"
+  },
+  "services": [
+    {
+      "title": "Emergency Plumbing",
+      "slug": "emergency-plumbing",
+      "shortTitle": "Emergency Plumbing",
+      "icon": "Fuel",
+      "desc": "Burst pipes, major leaks, sewage backups — we respond fast, 24/7. Average arrival time: 45 minutes.",
+      "signs": ["Water gushing from pipes", "Sewage backing up", "No water at all", "Gas smell near pipes"]
+    },
+    {
+      "title": "Drain & Sewer",
+      "slug": "drain-sewer",
+      "shortTitle": "Drain Cleaning",
+      "icon": "Waves",
+      "desc": "Professional drain cleaning, camera inspection, and trenchless sewer repair with minimal disruption.",
+      "signs": ["Slow draining sinks", "Gurgling sounds", "Recurring clogs", "Bad odors from drains"]
+    },
+    {
+      "title": "Water Heater",
+      "slug": "water-heater",
+      "shortTitle": "Water Heater Repair",
+      "icon": "Flame",
+      "desc": "Repair and replacement for tank and tankless systems. We service all major brands.",
+      "signs": ["No hot water", "Strange noises from tank", "Rusty water", "Leaking around base"]
+    },
+    {
+      "title": "Leak Detection",
+      "slug": "leak-detection",
+      "shortTitle": "Leak Detection",
+      "icon": "Search",
+      "desc": "Non-invasive electronic leak detection technology to find hidden leaks without tearing up your home.",
+      "signs": ["Unexplained high water bill", "Damp spots on walls/ceiling", "Sound of running water", "Mold or mildew smell"]
+    },
+    {
+      "title": "Pipe Repair & Replacement",
+      "slug": "pipe-repair",
+      "shortTitle": "Pipe Repair",
+      "icon": "Wrench",
+      "desc": "From minor repairs to full repiping. We work with copper, PEX, and PVC materials.",
+      "signs": ["Discolored water", "Low water pressure", "Visible corrosion", "Frequent leaks"]
+    },
+    {
+      "title": "Toilet Repair",
+      "slug": "toilet-repair",
+      "shortTitle": "Toilet Repair",
+      "icon": "CircleDot",
+      "desc": "Running toilets, clogs, replacements, and new installations handled quickly and cleanly.",
+      "signs": ["Constantly running", "Weak flush", "Rocking or unstable", "Cracks in porcelain"]
+    },
+    {
+      "title": "Faucet Installation",
+      "slug": "faucet-installation",
+      "shortTitle": "Faucet Installation",
+      "icon": "Droplets",
+      "desc": "Kitchen, bathroom, and utility faucets. Professional installation with clean finishes.",
+      "signs": ["Persistent dripping", "Low water pressure", "Rust or mineral buildup", "Outdated fixtures"]
+    },
+    {
+      "title": "Gas Line",
+      "slug": "gas-line",
+      "shortTitle": "Gas Line",
+      "icon": "GitBranch",
+      "desc": "Gas line installation, repair, and leak detection by certified technicians. Safety first.",
+      "signs": ["Rotten egg smell", "Hissing near gas line", "Dead vegetation near line", "Higher gas bills"]
+    }
+  ],
+  "serviceFormOptions": ["Drain Cleaning", "Water Heater Repair", "Leak Detection", "Pipe Repair", "Sewer Line", "Toilet Repair", "Faucet Installation", "Gas Line", "Other"],
+  "trustBarItems": [
+    "Licensed & Insured",
+    "24/7 Emergency Service",
+    "Upfront Pricing",
+    "100% Satisfaction Guarantee"
+  ],
+  "whyChooseUs": [
+    { "title": "Upfront Pricing", "desc": "No surprises — you'll know the cost before we start any work." },
+    { "title": "Licensed Master Plumbers", "desc": "Fully certified professionals with years of hands-on experience." },
+    { "title": "Same-Day Service", "desc": "Available when you need us, often within hours of your call." },
+    { "title": "Lifetime Warranty", "desc": "We stand behind every job with our lifetime warranty on labor." }
+  ],
+  "values": [
+    { "title": "Integrity", "desc": "Upfront pricing with no hidden fees. Ever." },
+    { "title": "Family Values", "desc": "We treat your home the way we'd treat ours." },
+    { "title": "Craftsmanship", "desc": "Licensed masters who take pride in quality work." },
+    { "title": "Community", "desc": "Proud supporters of local schools and charities." }
+  ],
+  "certifications": [
+    "Master Plumber License #MP-2847",
+    "State Contractor License #SC-19472",
+    "EPA Lead-Safe Certified",
+    "BBB A+ Rated"
+  ],
+  "reviews": [
+    { "name": "Maria Gonzalez", "rating": 5, "text": "They fixed our burst pipe at midnight. Professional, fast, and the price was exactly what they quoted. Can't recommend enough.", "date": "2 weeks ago" },
+    { "name": "Robert Chen", "rating": 5, "text": "Called for a water heater replacement. They came same day, explained all our options, and had it running by evening. Excellent work.", "date": "1 month ago" },
+    { "name": "Linda Patterson", "rating": 5, "text": "After 3 other plumbers couldn't find our leak, AquaFlow diagnosed it in under an hour. Honest and highly skilled team.", "date": "3 weeks ago" },
+    { "name": "James Okwu", "rating": 5, "text": "Best plumbing experience we've had. On time, clean work area, fair pricing. They've earned a customer for life.", "date": "1 month ago" }
+  ],
+  "reviewStats": {
+    "average": "4.9",
+    "count": "200+"
+  },
+  "serviceAreaCities": [
+    "Downtown", "Westside", "Northgate", "Lakewood", "Eastport",
+    "Riverside", "Hillcrest", "Fairview", "Cedar Park", "Oak Valley",
+    "Maple Heights", "Springfield"
+  ],
+  "specials": [
+    { "title": "$50 Off Water Heater Installation", "desc": "Save on tank or tankless water heater installation. Mention this offer when scheduling.", "expires": "Valid through March 2026", "icon": "Tag" },
+    { "title": "Free Drain Camera Inspection", "desc": "Get a complimentary camera inspection with any drain cleaning service. See exactly what's going on.", "expires": "Ongoing", "icon": "Percent" },
+    { "title": "Winter Pipe Protection Package", "desc": "Pipe insulation and freeze prevention check for just $149. Protect your home before the cold hits.", "expires": "Seasonal offer", "icon": "Snowflake" },
+    { "title": "Military & Senior Discount", "desc": "10% off all services for active military, veterans, and seniors 65+. Thank you for your service.", "expires": "Always available", "icon": "Users" }
+  ],
+  "cta": {
+    "headline": "Don't let a small leak become a big problem.",
+    "subtext": "Our licensed plumbers are standing by. Call now or schedule at your convenience."
+  },
+  "seo": {
+    "home": {
+      "title": "AquaFlow Plumbing | 24/7 Emergency Plumber in Metro City",
+      "description": "Licensed plumber serving the metro area. Drain cleaning, water heater repair, leak detection & emergency plumbing. 24/7 service. Upfront pricing. Call (555) 123-4567.",
+      "h1": "Fast. Reliable.\nPlumbing Done Right."
+    },
+    "about": {
+      "title": "About AquaFlow Plumbing | Metro City",
+      "description": "Family-owned plumbing company serving the metro area since 2008. Licensed master plumbers, upfront pricing, and a satisfaction guarantee on every job."
+    },
+    "services": {
+      "title": "Plumbing Services | AquaFlow Plumbing",
+      "description": "Comprehensive plumbing solutions for homes and businesses. Drain cleaning, water heater repair, leak detection, pipe repair, and emergency plumbing. Every job backed by our satisfaction guarantee."
+    },
+    "specials": {
+      "title": "Plumbing Specials & Coupons | AquaFlow Plumbing",
+      "description": "Save on quality plumbing services with current promotions from AquaFlow Plumbing. Water heater discounts, free inspections, and more."
+    },
+    "contact": {
+      "title": "Contact AquaFlow Plumbing | Metro City",
+      "description": "Schedule plumbing service or request emergency help. Fill out our form or call (555) 123-4567. Available 24/7 for emergencies."
+    }
+  },
+  "branding": {
+    "primaryColor": "hsl(217, 91%, 53%)",
+    "secondaryColor": "hsl(213, 52%, 24%)",
+    "accentColor": "hsl(0, 86%, 60%)"
+  }
+}

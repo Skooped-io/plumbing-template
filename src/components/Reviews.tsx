@@ -1,12 +1,6 @@
 import { Star } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-
-const reviews = [
-  { name: "Maria Gonzalez", rating: 5, text: "They fixed our burst pipe at midnight. Professional, fast, and the price was exactly what they quoted. Can't recommend enough.", date: "2 weeks ago" },
-  { name: "Robert Chen", rating: 5, text: "Called for a water heater replacement. They came same day, explained all our options, and had it running by evening. Excellent work.", date: "1 month ago" },
-  { name: "Linda Patterson", rating: 5, text: "After 3 other plumbers couldn't find our leak, AquaFlow diagnosed it in under an hour. Honest and highly skilled team.", date: "3 weeks ago" },
-  { name: "James Okwu", rating: 5, text: "Best plumbing experience we've had. On time, clean work area, fair pricing. They've earned a customer for life.", date: "1 month ago" },
-];
+import { seoConfig } from "@/lib/config";
 
 const Reviews = () => (
   <section className="py-20 md:py-28 bg-background">
@@ -20,12 +14,12 @@ const Reviews = () => (
                 <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
               ))}
             </div>
-            <span className="text-muted-foreground font-body text-sm">4.9 average from 200+ reviews</span>
+            <span className="text-muted-foreground font-body text-sm">{seoConfig.reviewStats.average} average from {seoConfig.reviewStats.count} reviews</span>
           </div>
         </div>
       </ScrollReveal>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {reviews.map((r, i) => (
+        {seoConfig.reviews.map((r, i) => (
           <ScrollReveal key={r.name} delay={i * 80}>
             <div className="rounded-lg bg-surface p-6 shadow-sm border border-border/50 h-full flex flex-col">
               <div className="flex gap-0.5 mb-3">
