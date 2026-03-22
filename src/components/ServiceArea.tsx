@@ -1,11 +1,6 @@
 import { MapPin } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-
-const cities = [
-  "Downtown", "Westside", "Northgate", "Lakewood", "Eastport",
-  "Riverside", "Hillcrest", "Fairview", "Cedar Park", "Oak Valley",
-  "Maple Heights", "Springfield",
-];
+import { seoConfig } from "@/lib/config";
 
 const ServiceArea = () => (
   <section className="py-20 md:py-28 bg-surface">
@@ -15,10 +10,10 @@ const ServiceArea = () => (
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">Service Area</h2>
             <p className="text-muted-foreground font-body mb-6">
-              We proudly serve the greater metro area and surrounding communities. Not sure if we cover your neighborhood? Give us a call.
+              We proudly serve the {seoConfig.serviceArea.toLowerCase()} and surrounding communities. Not sure if we cover your neighborhood? Give us a call.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {cities.map(city => (
+              {seoConfig.serviceAreaCities.map(city => (
                 <div key={city} className="flex items-center gap-1.5 text-foreground font-body text-sm">
                   <MapPin className="h-3.5 w-3.5 text-primary shrink-0" />
                   {city}
